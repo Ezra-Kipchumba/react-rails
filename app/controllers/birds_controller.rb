@@ -12,4 +12,5 @@ class BirdsController < ApplicationController
     rescue ActiveRecord::RecordNotFound
         render json: {error: "Bird not Found"}, status: :not_found
     end
+    
 end
